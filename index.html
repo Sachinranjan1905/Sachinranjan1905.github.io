@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Ranjan | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    header {
+      padding: 20px;
+      background-color: #1f1f1f;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav a {
+      color: #00bcd4;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      background-color: #2c2c2c;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .skills span {
+      background: #00bcd4;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 5px;
+      display: inline-block;
+      color: #000;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      color: #aaa;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      color: #fff;
+      background-color: #00bcd4;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #00bcd4;
+      font-size: 1.5em;
+    }
+    @media (max-width: 768px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sachin Ranjan</h1>
+    <p>B.Tech Student | C++ Developer | Open Source Enthusiast</p>
+    <div class="social-icons">
+      <a href="https://github.com/Sachinranjan1905" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sachin-ranjan-8281a1329/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </header>
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Sachin Ranjan — a 2nd-year B.Tech student at Quantum University, passionate about C++, problem-solving,
+      and building cool projects like games, AI classifiers, and 3D engines.
+    </p>
+    <a href="Resume.pdf" download class="button">Download Resume</a>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>🎮 Quiz Game (C++)</h3>
+        <p>Console-based multiple-choice quiz game using C++, menus, and scoring logic.</p>
+        <a href="https://github.com/Sachinranjan1905/Quize-game" target="_blank" class="button">View Code</a>
+      </div>
+      <div class="card">
+        <h3>🧩 Sudoku Solver (C++)</h3>
+        <p>Backtracking-based Sudoku solver implemented in C++ with recursive logic.</p>
+        <a href="https://github.com/Sachinranjan1905/sudoku--solver" target="_blank" class="button">View Code</a>
+      </div>
+      <div class="card">
+        <h3>🍄 Mushroom Classifier (YOLOv12s)</h3>
+        <p>AI model to classify 8 types of mushrooms using YOLOv12s and deep learning.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>C++</span>
+      <span>C</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>OOPs</span>
+      <span>OpenGL</span>
+      <span>YOLO</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sachin Ranjan. All rights reserved.</p>
+  </footer>
+</body>
+</html>
